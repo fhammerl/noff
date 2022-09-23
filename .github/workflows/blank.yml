@@ -1,0 +1,10 @@
+name: Local Docker build
+on:
+  workflow_dispatch:
+jobs:
+  local-and-remote:
+    container: ubuntu    
+    runs-on: [self-hosted, builder] # this would be self-hosted in a k8s (ARC) scenario
+    steps:
+      - run: echo 'hellow'
+      #- uses: fhammerl/container-actions-demo/docker-built-from-file@main
