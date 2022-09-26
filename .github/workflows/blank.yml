@@ -13,3 +13,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: fhammerl/container-actions-demo/docker-built-from-file@main
+      - uses: fhammerl/container-actions-demo/docker-pulled-from-registry@main
