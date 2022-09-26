@@ -7,6 +7,7 @@ jobs:
     container: ubuntu    
     runs-on: [self-hosted, builder] # this would be self-hosted in a k8s (ARC) scenario
     steps:
+      - uses: fhammerl/container-actions-demo/docker-pulled-from-registry@main
       - uses: fhammerl/container-actions-demo/docker-built-from-file@main
   ubi:
     container: ubuntu    
